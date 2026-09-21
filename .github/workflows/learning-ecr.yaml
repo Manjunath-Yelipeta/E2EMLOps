@@ -9,11 +9,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v7
+        uses: actions/checkout@v4
+
+      - name: Inspect repository
         run: |
           echo "Current directory:"
           pwd
 
           echo "Repository files:"
           ls -la
-
